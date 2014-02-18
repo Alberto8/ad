@@ -1,0 +1,8 @@
+ALTER TABLE `dbprueba`.`articulo` 
+  ADD CONSTRAINT `fk_articulo_categoria`
+  FOREIGN KEY (`categoria` )
+  REFERENCES `dbprueba`.`categoria` (`id` )
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+, ADD INDEX `fk_articulo_categoria` (`categoria` ASC) ;
+
